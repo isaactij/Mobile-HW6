@@ -9,11 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var imageView: UIImageView!
+    var indexP:Int  = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imageView.image = UIImage(named: "wonders\(index)")
     }
 
     override func didReceiveMemoryWarning() {
